@@ -8,6 +8,8 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
+            - name: Checking out the source code
+              uses: actions/checkout@v4
             - name: Configure AWS Credentials
               uses: aws-actions/configure-aws-credentials@v4
               with:
