@@ -19,3 +19,5 @@ jobs:
             - name: Installing the cloudformation tool to powershell
               shell: pwsh
               run: Install-Module -Name AWS.Tools.CloudFormation -Force
+            - name: Running the deployment pwsh script
+              run: pwsh -File deploy.ps1
