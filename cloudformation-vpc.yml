@@ -3,3 +3,8 @@ Resources:
         Type: AWS::EC2::VPC
         Properties:
             CidrBlock: 10.60.0.0/16
+    Subnet1:
+        Type: AWS::EC2::Subnet
+        Properties:
+            CidrBlock: 10.60.5.0/24
+            VpcId: !Ref VPC
